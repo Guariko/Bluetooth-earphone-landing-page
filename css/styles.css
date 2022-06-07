@@ -1,4 +1,4 @@
-/* Setting up the project */
+/* TODO: Setting up the project */
 
 html {
     scroll-behavior: smooth;
@@ -12,13 +12,20 @@ html {
     border: 0;
     list-style-type: none;
     outline: none;
-    overflow-x: hidden;
+    text-decoration: none;
+    box-shadow: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                 Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+                'Helvetica Neue', sans-serif;
+    transition: all 0.2s linear;                       
 }
 
 :root {
     --main-color: #212121;
     --third-color: #C1C1C1;
     --second-color: #fff;
+    --header-height: 8rem;
+    --global--padding: 1rem;
 }
 
 body {
@@ -33,5 +40,193 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--second-color);
 }
 
-/* Setting up the project ends */
+/* FIXME: Setting up the project ends */
 
+/* TODO: Header section starts */
+
+.header {
+    padding: var(--global--padding);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header .logo__container img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.header .header__nav__bar__container {
+    position: absolute;
+    background: #4D4D4D;
+    left: 110%;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    overflow-x: hidden;
+}
+
+.header .header__nav__bar__container .header__nav__bar .header__nav__bar__item a {
+    color: var(--second-color);
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.header .header__nav__bar .header__nav__bar__item {
+    padding: 2rem 0 2rem 0.2rem;
+    border-bottom: 0.5px solid rgba(0,0,0,0.2);
+    border-top: 0.5px solid rgba(0,0,0,0.2);
+}
+
+header .header__nav__bar .header__nav__bar__item:hover {
+    background: #3C3E42;
+}
+
+.header__nav__bar__container .fa-times {
+    font-size: 3rem;
+    color: var(--second-color);
+    align-self: flex-end;
+    padding: 10% 10% 0 0;
+}
+
+.header .header__nav__bar__container.active {
+    left: 65%;
+}
+
+.header__bars {
+    color: var(--second-color);
+    font-size: 3.5rem;
+}
+
+/* FIXME: Header section ends */
+
+/* TODO: Media queries  start */
+
+@media screen and (min-width:350px) {
+    
+    /* TODO: Header adjustments */
+    .header .header__nav__bar .header__nav__bar__item {
+        padding: 2rem 1rem;
+    }
+
+    /* FIXME: Header adjustments end */
+}
+
+@media screen and (min-width: 400px) {
+    
+
+    /* TODO: Header adjustments */
+
+    .header .header__nav__bar__container .header__nav__bar .header__nav__bar__item a {
+        font-size: 1.3rem;
+    }
+
+    .header .logo__container img {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    
+    /* FIXME: Header adjustments end */ 
+    
+}
+
+@media screen and (min-width:500px) {
+
+    /* TODO: Setting up the project adjustments */
+
+     :root {
+        --global--padding: 2rem;
+    }
+    
+    /* fixme: Setting up the project adjustments end */
+    
+}
+
+@media screen and (min-width: 550px) {
+
+     
+    /* TODO: Header adjustments */
+
+    .header .header__nav__bar__container.active {
+        left: 70%;
+    }
+
+    /* FIXME: Header adjustments end */
+
+}
+
+@media screen and (min-width: 700px) {
+    
+    /* TODO: Header adjustments */
+
+    .header__bars {
+        display: none;
+    }
+
+    .header__nav__bar__container .fa-times {
+        display: none;
+    }
+
+    .header .header__nav__bar__container {
+        position: initial;
+        background: none;
+        height: initial;
+        display: initial;
+    }
+
+    .header .header__nav__bar .header__nav__bar__item {
+        padding: 0;
+        border-bottom: none;
+        border-top: none;
+    }
+
+    .header .header__nav__bar__container .header__nav__bar {
+        display: flex;
+        gap: 3rem;
+    }
+
+    .header .header__nav__bar__container .header__nav__bar .header__nav__bar__item {
+        background: none;
+    }
+    
+    .header .header__nav__bar__container .header__nav__bar .header__nav__bar__item a.active,
+    .header .header__nav__bar__container .header__nav__bar .header__nav__bar__item a:hover {
+        color: #00C9A5;
+    }
+
+    /* FIXME: Header adjustments end */
+}
+
+@media screen and (min-width:800px) {
+
+     /* TODO: Header adjustments */
+
+    .header .header__nav__bar__container .header__nav__bar .header__nav__bar__item a {
+        font-size: 1.4rem;
+    }
+
+    /* FIXME: Header adjustments end */
+    
+}
+
+@media screen and (min-width:1000px) {
+
+    /* TODO: Setting up the project adjustments */
+
+     :root {
+        --global--padding: 2rem 5%;
+    }
+    
+    /* fixme: Setting up the project adjustments end */
+    
+}
