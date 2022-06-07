@@ -1,0 +1,37 @@
+/* Setting up the project */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    list-style-type: none;
+    outline: none;
+    overflow-x: hidden;
+}
+
+:root {
+    --main-color: #212121;
+    --third-color: #C1C1C1;
+    --second-color: #fff;
+}
+
+body {
+    background: var(--main-color);
+}
+
+p {
+    color: var(--third-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--second-color);
+}
+
+/* Setting up the project ends */
+
