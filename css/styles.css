@@ -94,7 +94,7 @@ h3 {
 .header .header__nav__bar__container .header__nav__bar .header__nav__bar__item a {
     color: var(--second-color);
     font-size: 1.1rem;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-weight: 600;
 }
 
@@ -130,6 +130,7 @@ header .header__nav__bar .header__nav__bar__item:hover {
 .main {
     margin-top: var(--header-height);
     padding: var(--global--padding);
+    overflow: hidden;
 }
 
 /* FIXME: Main adjustments end */
@@ -190,6 +191,59 @@ header .header__nav__bar .header__nav__bar__item:hover {
 
 /* FIXME: Home section ends */
 
+/* TODO: Specs section starts */
+
+.specs {
+    margin-top: 8rem;
+}
+
+.specs h2 {
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.7) 13%, rgba(172,172,172,0.7) 88%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.specs .specs__image {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.specs .specs__image img {
+    width: 14rem;
+}
+
+.specs__content h3 {
+    font-size: 1rem;
+}
+
+.specs__content i {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 0.4rem;
+}
+
+.specs__content span {
+    color: #888;
+    font-size: 0.7rem;
+    display: inline-block;
+    margin-top: 0.4rem;
+}
+
+.specs__content__container {
+    display: grid;
+    grid-template: repeat(2, 5rem)/ repeat(2, minmax(2rem, 6rem));
+    justify-content: center;
+    column-gap: 4rem;
+    row-gap: 1rem;
+}
+
+/* FIXME: Specs section ends */
+
 /* TODO: Media queries  start */
 
 @media screen and (min-width:264px) {
@@ -249,6 +303,43 @@ header .header__nav__bar .header__nav__bar__item:hover {
     }
     
     /* fixme: Setting up the project adjustments end */
+
+    /* TODO: Specs adjustments */
+
+    .specs__content__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: initial;
+        row-gap: 2rem;
+    }
+
+    .specs__container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+    }
+    
+    .specs .specs__image {
+        margin-top: 4rem;
+    }
+
+    .specs .specs__image img {
+        width: 16rem;
+    }
+
+    .specs__content:first-of-type,
+    .specs__content:last-of-type {
+        margin-left: 2rem;
+    }
+
+    .specs__content:nth-child(2),
+    .specs__content:nth-child(3) {
+        margin-left: -0.5rem;
+    }
+    
+    /* FIXME: Specs adjustments end */
     
 }
 
@@ -262,6 +353,23 @@ header .header__nav__bar .header__nav__bar__item:hover {
     }
 
     /* FIXME: Header adjustments end */
+
+    /* TODO: Specs adjustments */
+
+    .specs__container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .specs__content:nth-child(2),
+    .specs__content:nth-child(3) {
+        margin-left: -1rem;
+    }
+
+    /* FIXME: Specs adjustments end */
 
 }
 
@@ -324,6 +432,14 @@ header .header__nav__bar .header__nav__bar__item:hover {
     }
 
     /* FIXME: Home adjustments end */
+    
+    /* TODO: Specs adjustments */
+
+    .specs__container {
+        gap: 6rem;
+    }
+
+    /* FIXME: Specs adjustments end */
 }
 
 @media screen and (min-width:800px) {
@@ -343,6 +459,10 @@ header .header__nav__bar .header__nav__bar__item:hover {
     }
 
     /* FIXME: Home adjustments end */
+
+    .specs .specs__image img {
+        width: 17rem;
+}
     
 }
 
