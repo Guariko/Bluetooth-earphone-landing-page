@@ -166,7 +166,7 @@ header .header__nav__bar .header__nav__bar__item:hover {
     padding: 0.6rem 1rem;
     color: var(--second-color);
     background: #474746;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     border-radius: 1.5rem;
     cursor: pointer;
 }
@@ -244,7 +244,49 @@ header .header__nav__bar .header__nav__bar__item:hover {
 
 /* FIXME: Specs section ends */
 
+/* TODO: Case section starts */
+
+.case {
+    margin-top: 7rem;
+}
+
+.case h2 {
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.7) 13%, rgba(172,172,172,0.7) 88%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.case__image {
+    text-align: center;
+}
+
+.case__image img {
+    width: 13rem;
+    margin: 4rem 0 2rem;
+}
+
+.case__content p {
+    margin-bottom: 4rem;
+    max-width: 50ch;
+}
+
+.case__content .button {
+    font-size: 0.7rem;
+}
+
+.case__content .fa-circle-exclamation {
+    font-size: 1rem;
+    margin-right: 0.4rem;
+}
+
+/* FIXME: Case section ends */
+
 /* TODO: Media queries  start */
+
 
 @media screen and (min-width:264px) {
 
@@ -255,6 +297,18 @@ header .header__nav__bar .header__nav__bar__item:hover {
     }
 
     /* FIXME: Home adjustments end */
+
+    /* TODO: Case adjustments */
+
+    .case__content .button {
+        font-size: 1rem;
+    }
+    
+    .case__content .fa-circle-exclamation {
+        font-size: 1.4rem;
+    }
+
+    /* FIXME: Case adjustments end */
 }
 
 @media screen and (min-width:350px) {
@@ -371,6 +425,60 @@ header .header__nav__bar .header__nav__bar__item:hover {
 
     /* FIXME: Specs adjustments end */
 
+    /* TODO: Case adjustments */
+
+    .case__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .case__content p {
+        max-width: 20ch;
+    }
+
+    .case__content {
+        width: 50ch;
+    }
+
+    .case__content .button {
+        font-size: 0.85rem;
+    }
+    
+    .case__content .fa-circle-exclamation {
+        font-size: 1.3rem;
+    }
+
+    /* FIXME: Case adjustments end */
+
+}
+
+@media screen and (min-width:600px) {
+
+    /* TODO: Specs adjustments */
+
+    .specs h2 {
+        font-size: 5rem;
+    }
+
+    /* FIXME: Specs adjustments end */
+
+    /* TODO: Case adjustments */
+
+    .case h2 {
+        font-size: 5rem;    
+    }
+
+    .case__content .button {
+        font-size: 1rem;
+    }
+    
+    .case__content .fa-circle-exclamation {
+        font-size: 1.4rem;
+    }
+    
+    /* FIXME: Case adjustments end */
 }
 
 @media screen and (min-width: 700px) {
@@ -439,7 +547,24 @@ header .header__nav__bar .header__nav__bar__item:hover {
         gap: 6rem;
     }
 
+    .specs h2 {
+        font-size: 6rem;
+    }
+
     /* FIXME: Specs adjustments end */
+
+
+    /* TODO: Case adjustments */
+
+    .case h2 {
+        font-size: 6rem;  
+    }
+
+    .case__container {
+        gap: 6rem;
+    }
+
+        /* FIXME: Case adjustments end */
 }
 
 @media screen and (min-width:800px) {
@@ -460,9 +585,26 @@ header .header__nav__bar .header__nav__bar__item:hover {
 
     /* FIXME: Home adjustments end */
 
+    /* TODO: Specs adjustments 
+
     .specs .specs__image img {
         width: 17rem;
-}
+    }
+
+    /* FIXME: Specs adjustments end */
+
+    /* TODO: Case adjustments */
+
+    .case__image img {
+        width: 15rem;
+    }
+
+    .case__container {
+        gap: 7rem;
+    }
+
+    /* FIXME: Case adjustments end */
+
     
 }
 
@@ -483,5 +625,13 @@ header .header__nav__bar .header__nav__bar__item:hover {
     }
 
     /* FIXME: Home adjustments end */
+
+    /* TODO: Case adjustments */
+
+    .case__container {
+        gap: 8rem;
+    }
+
+    /* FIXME: Case adjustments end */
     
 }
