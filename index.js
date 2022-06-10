@@ -50,3 +50,45 @@ window.addEventListener("resize", e => {
 });
 
 // FIXME: Discount section ends //
+
+// TODO: Footer adjustments //
+
+const footer = document.querySelector(".footer");
+const footerNavBarContainerMobile = document.querySelector(".footer__content");
+const footerNavBars = document.querySelectorAll(".footer__nav__bar__container");
+const footerForm = document.querySelector(".footer__brand__icons__container");
+const footerNavBarBreakPoint = 861;
+
+
+function changeMobileAndDesktopFooter() {
+
+    if (window.innerWidth >= footerNavBarBreakPoint) {
+          
+        if (Array.from(footer.children).includes(footerNavBarContainerMobile)) {
+            
+            footer.removeChild(footerNavBarContainerMobile);
+            footer.insertBefore(footerNavBars[1], footerForm);
+            footer.insertBefore(footerNavBars[0], footerNavBars[1]);
+        };
+    }
+    
+    else {
+
+        if (!Array.from(footer.children).includes(footerNavBarContainerMobile)) {
+
+            footer.insertBefore(footerNavBarContainerMobile, footerForm);
+            footerNavBars.forEach(navbar => {
+                footerNavBarContainerMobile.appendChild(navbar);
+            });
+        }
+    }
+}
+
+changeMobileAndDesktopFooter();
+
+window.addEventListener("resize", e => {
+    changeMobileAndDesktopFooter();
+});
+
+
+

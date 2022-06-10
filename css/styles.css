@@ -395,6 +395,99 @@ header .header__nav__bar .header__nav__bar__item:hover {
 
 /* FIXME: Products section ends */
 
+/* TODO: Footer starts */
+
+.footer {
+    margin-top: 8rem;
+    overflow: hidden;
+    padding: var(--global--padding);
+    padding-bottom: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.footer__logo {
+    margin-bottom: 4rem;
+}
+
+.footer__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.footer__nav__bar__container h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.footer__nav__bar__container .footer__nav__bar .footer__nav__bar__item {
+    font-size: 0.8rem;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1.5;
+    color: var(--third-color);
+    margin: 0.1rem 0;
+}
+
+#footer__form {
+    margin-top: 4rem;
+    padding: 1rem 0.2rem;
+    background: #252525;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    width: 10rem;
+}
+
+#footer__form input[type="email"] {
+    font-size: 1rem;
+    padding: 0.4rem;
+    background: none;
+    color: #fff;
+}
+
+#footer__form input[type="email"]::placeholder {
+    color: #fff;
+}
+
+.footer__brand__icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__brand__icons i {
+    font-size: 0.7rem;
+    color: var(--second-color);
+    cursor: pointer;
+}
+
+.footer .button {
+    max-width: 8rem;
+}
+
+.copy {
+    position: absolute;
+    bottom: 1rem;
+}
+
+.copy span {
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.65rem;
+}
+
+/* FIXME: Footer ends /*
+
 /* TODO: Media queries  start */
 
 
@@ -427,6 +520,26 @@ header .header__nav__bar .header__nav__bar__item:hover {
     }
 
     /* FIXME: Products adjustments end */
+
+    /* TODO: Footer adjustments */
+
+    #footer__form {
+        width: 14rem;
+    }
+
+    /* FIXME: Footer adjustments end */
+}
+
+@media screen and (min-width: 310px) {
+
+    /* TODO: Footer adjustments */
+
+    #footer__form {
+        width: 15rem;
+    }
+
+    /* FIXME: Footer adjustments end */
+    
 }
 
 @media screen and (min-width:350px) {
@@ -454,6 +567,14 @@ header .header__nav__bar .header__nav__bar__item:hover {
     }
 
     /* FIXME: Products adjustments end */
+
+    /* TODO: Footer adjustments */
+
+     #footer__form {
+        width: 17rem;
+    }
+
+    /* FIXME: Footer adjustments end */
 }
 
 @media screen and (min-width: 400px) {
@@ -480,6 +601,33 @@ header .header__nav__bar .header__nav__bar__item:hover {
 
     /* FIXME: Discount adjustments end */
 
+    /* TODO: Footer adjustments */
+
+    .footer__content {
+        gap: 4rem;
+    }
+
+    #footer__form {
+       width: 17rem;
+    }
+   
+    /* FIXME: Footer adjustments end */
+    
+}
+
+@media screen and (min-width: 412px) {
+
+    /* TODO: Footer adjustments */
+
+    #footer__form {
+        display: flex;
+        flex-direction: initial;
+        flex-wrap: wrap;
+        width: auto;
+        max-width: 24rem;
+    }
+
+    /* FIXME: Footer adjustments end */
     
 }
 
@@ -761,6 +909,7 @@ header .header__nav__bar .header__nav__bar__item:hover {
     }
 
     /* FIXME: Products adjustments end */
+
 }
 
 @media screen and (min-width:800px) {
@@ -829,6 +978,33 @@ header .header__nav__bar .header__nav__bar__item:hover {
     
 }
 
+@media screen and (min-width:861px) { 
+
+    /* TODO: Footer adjustments */
+
+    .footer {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .footer__brand__icons {
+        justify-content: flex-start;
+    }
+
+    .footer__brand__icons__container {
+        width: 25rem;
+    }
+
+    .footer__logo {
+        margin-bottom: 0;
+    }
+
+    /* FIXME: Footer adjustments end */
+    
+}
+
 @media screen and (min-width: 900px) {
 
     /* TODO: Discount adjustmentd */
@@ -859,6 +1035,14 @@ header .header__nav__bar .header__nav__bar__item:hover {
     }
 
     /* FIXME: Products adjustments end */
+
+    /* TODO: Footer adjustments */
+
+    .footer {
+        gap: 4rem;
+    }
+
+    /* FIXME: Footer adjustments end */
     
 }
 
@@ -900,6 +1084,14 @@ header .header__nav__bar .header__nav__bar__item:hover {
     }
 
     /* FIXME: Discount adjustments end */
+
+    /* TODO: Footer adjustments */
+
+    .footer {
+        gap: 5rem;
+    }
+
+    /* FIXME: Footer adjustments end */
     
 }
 
@@ -925,5 +1117,15 @@ header .header__nav__bar .header__nav__bar__item:hover {
     }
 
     /* FIXME: Discount adjustments end */
+
+     /* TODO: Footer adjustments */
+
+    .footer {
+        gap: 8rem;
+    }
+
+    /* FIXME: Footer adjustments end */
     
 }
+
+/* FIXME: Media queries end */
