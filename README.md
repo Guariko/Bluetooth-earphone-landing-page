@@ -1,2 +1,2 @@
-# Bluetooth-earphone-landing-page
+# HeadPhone-landing-page
 Landing page
